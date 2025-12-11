@@ -1,13 +1,15 @@
 {
-  "name": "test-1",
+  "homepage": "https://quangpham2905-glitch.github.io/family-schedule/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "tsc && vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "recharts": "^3.5.1",
     "@google/genai": "^1.30.0",
